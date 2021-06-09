@@ -8,7 +8,7 @@ import org.springframework.data.repository.query.Param;
 
 import crm.jpa.model.Order;
 
-public interface orderRepository extends JpaRepository<Order, Integer>{
+public interface OrderRepository extends JpaRepository<Order, Integer>{
 	
 	List<Order> findByStatusAndType(String status, String type);
 	
