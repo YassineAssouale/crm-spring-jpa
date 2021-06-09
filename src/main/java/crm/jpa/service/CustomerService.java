@@ -13,7 +13,7 @@ public interface CustomerService {
 	 * @return
 	 */
 	
-	Optional<Customer> getCustomrById(Integer id);
+	Optional<Customer> getCustomerById(Integer id);
 	
 	/**
 	 *
