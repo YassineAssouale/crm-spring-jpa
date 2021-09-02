@@ -38,7 +38,7 @@ public class MyOrder {
 	@Column(length = 30) 
 	private String type;
 	
-	@Column(lengtg = 255) 
+	@Column(length = 255) 
 	private String notes;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
