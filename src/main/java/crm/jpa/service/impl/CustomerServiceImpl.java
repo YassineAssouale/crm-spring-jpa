@@ -8,12 +8,13 @@ import javax.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import crm.jpa.exception.DaoException;
 import crm.jpa.model.Customer;
 import crm.jpa.repository.CustomerRepository;
 import crm.jpa.service.CustomerService;
-
+@Service
 public class CustomerServiceImpl implements CustomerService {
 	
 	Logger logger = LoggerFactory.getLogger(CustomerServiceImpl.class);

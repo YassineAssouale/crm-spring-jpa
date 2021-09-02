@@ -24,7 +24,7 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
 import crm.jpa.config.AppConfig;
 import crm.jpa.model.Customer;
 import crm.jpa.repository.CustomerRepository;
-@ExtendWith(SpringExtension.class)
+@ExtendWith(SpringExtension.class) // Mock : to use mock for test
 @ContextConfiguration(classes = {AppConfig.class}, loader = AnnotationConfigContextLoader.class)
 @Transactional
 @DirtiesContext

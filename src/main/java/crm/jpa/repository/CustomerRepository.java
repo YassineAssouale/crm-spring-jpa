@@ -26,7 +26,7 @@ public interface CustomerRepository extends JpaRepository<Customer, Integer>{
 	List<Customer> findByActive(@Param("active") Boolean active);
 	
 	/**
-	 * @return a list of customer with mobil
+	 * @return a list of customer with mobile
 	 */
 	@Query("SELECT c FROM Customer c WHERE c.mobile IS NOT NULL")
 	List<Customer> findCustomerWithMobil();
